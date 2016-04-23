@@ -6,18 +6,18 @@
   <title>如何看待操作系统 | Study Together</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="摘要：
-&amp;emsp;&amp;emsp;每天你都在和操作系统打交道，Windows、Linux、Mac OS、Android等。除了操作系统开发人员,其他人包括软件开发人员都无需精通操作系统的构造原理，但是了解操作系统是如何运作的，是每个现代人尤其是软件开发人员需要掌握的基本功，无需深入，点到为止即可。">
+&amp;emsp;&amp;emsp; 每天你都在和操作系统打交道，Windows、Linux、Mac OS、Android等。除了操作系统开发人员,其他人包括软件开发人员都无需精通操作系统的构造原理，但是了解操作系统是如何运作的，是每个现代人尤其是软件开发人员需要掌握的基本功，无需深入，点到为止即可。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何看待操作系统">
 <meta property="og:url" content="http://birkhoff868.github.io/2016/04/22/如何看待操作系统/index.html">
 <meta property="og:site_name" content="Study Together">
 <meta property="og:description" content="摘要：
-&amp;emsp;&amp;emsp;每天你都在和操作系统打交道，Windows、Linux、Mac OS、Android等。除了操作系统开发人员,其他人包括软件开发人员都无需精通操作系统的构造原理，但是了解操作系统是如何运作的，是每个现代人尤其是软件开发人员需要掌握的基本功，无需深入，点到为止即可。">
-<meta property="og:updated_time" content="2016-04-22T13:54:32.427Z">
+&amp;emsp;&amp;emsp; 每天你都在和操作系统打交道，Windows、Linux、Mac OS、Android等。除了操作系统开发人员,其他人包括软件开发人员都无需精通操作系统的构造原理，但是了解操作系统是如何运作的，是每个现代人尤其是软件开发人员需要掌握的基本功，无需深入，点到为止即可。">
+<meta property="og:updated_time" content="2016-04-23T02:11:10.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何看待操作系统">
 <meta name="twitter:description" content="摘要：
-&amp;emsp;&amp;emsp;每天你都在和操作系统打交道，Windows、Linux、Mac OS、Android等。除了操作系统开发人员,其他人包括软件开发人员都无需精通操作系统的构造原理，但是了解操作系统是如何运作的，是每个现代人尤其是软件开发人员需要掌握的基本功，无需深入，点到为止即可。">
+&amp;emsp;&amp;emsp; 每天你都在和操作系统打交道，Windows、Linux、Mac OS、Android等。除了操作系统开发人员,其他人包括软件开发人员都无需精通操作系统的构造原理，但是了解操作系统是如何运作的，是每个现代人尤其是软件开发人员需要掌握的基本功，无需深入，点到为止即可。">
   
     <link rel="alternate" href="/atom.xml" title="Study Together" type="application/atom+xml">
   
@@ -97,16 +97,22 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="摘要："><a href="#摘要：" class="headerlink" title="摘要："></a>摘要：</h2><hr>
-<p>&emsp;&emsp;每天你都在和操作系统打交道，Windows、Linux、Mac OS、Android等。除了操作系统开发人员,其他人包括软件开发人员都无需精通操作系统的构造原理，<strong>但是了解操作系统是如何运作的，是每个现代人尤其是软件开发人员需要掌握的基本功，无需深入，点到为止即可。</strong><br><a id="more"></a></p>
+<p>&emsp;&emsp; 每天你都在和操作系统打交道，Windows、Linux、Mac OS、Android等。除了操作系统开发人员,其他人包括软件开发人员都无需精通操作系统的构造原理，<strong>但是了解操作系统是如何运作的，是每个现代人尤其是软件开发人员需要掌握的基本功，无需深入，点到为止即可。</strong><br><a id="more"></a></p>
 <h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><hr>
-<p>&emsp;&emsp;此时的你或多或少地写过程序了，不管用的是什么系统平台，什么开发工具，什么编程语言等。<br>&emsp;&emsp;平台包括但不限于：Windows、Linux、Mac OS、Android……<br>&emsp;&emsp;工具包括但不限于：VS、Qt Creator、Eclipse、IntelliJ IDEA、CLion……<br>&emsp;&emsp;语言包括但不限于：C/C++、Java、C#、PHP、Python、JavaScript……  </p>
+<p>&emsp;&emsp; 此时的你或多或少地写过程序了，不管用的是什么系统平台，什么开发工具，什么编程语言等。<br>&emsp;&emsp; 平台包括但不限于：Windows、Linux、Mac OS、Android……<br>&emsp;&emsp; 工具包括但不限于：VS、Qt Creator、Eclipse、IntelliJ IDEA、CLion……<br>&emsp;&emsp; 语言包括但不限于：C/C++、Java、C#、PHP、Python、JavaScript……  </p>
 <p>&emsp;&emsp;或许你是大神，知道它们之间的各种关系；或许你是小白，天天听得滚瓜烂熟，但是只知道个名字而已。本人差不多就是后者，所以我今天弄了个博客，将平常学到的东西记录下来，分享出去，于己于人都是件好事吧。</p>
+<h3 id="抽象CPU："><a href="#抽象CPU：" class="headerlink" title="抽象CPU："></a>抽象CPU：</h3><hr>
+<p>&emsp;&emsp; CPU里面的构造那是相当的复杂，但是我们可以这样想，世界上任何由无到有的东西都是从简单渐变到复杂的，CPU里面的电路再复杂，都是从最小最简单的单功能小电路组合起来的，比如说与门，两个输入角必须都是“高电平”，输出角才是“高电平”，还有或门，与非门等等，这些小小的门电路就可以组合成一个加法器，减法器等，再设计，再组合，最后就可以成为一个复杂的运算器了，能够进行加减乘除，浮点数运算等等。化繁为简，我们不管里面的电路物理上是什么结构的，我们力求用简单的视角来看待CPU,从逻辑上来看待CPU，抽象CPU。  </p>
+<p>&emsp;&emsp;【注意：】以下我们说的有关内容都是逻辑上的，功能上的，并不一定代表实际上物理上就是这样的。比如我们都知道CPU里面有个寄存器，叫程序计数寄存器（PC），存放当前正在执行的指令或将要执行的下一条指令，但是有些CPU，如某些嵌入式微处理器，其真正的PC寄存器可能就是一个寄存器，用来存放指令（可能是当前正在执行的，也可能是下一条指令）的地址；也可能是有2个寄存器实现类似的功能，比如x86架构的CS+IP，段+偏移等等。所以硬件上具体实现五花八门，冗余繁杂，但是逻辑上、功能上是类似的，也正因为如此，我们才能够抽象性地看待事物，扒皮抽筋，避繁就简。  </p>
+<p>&emsp;&emsp;【补充：】在这里简述一下CPU、单片机、内核、架构等有关的概念。CPU（Central Processing Unit）是中央处理单元的简写，它负责整个系统指令的执行，数学与逻辑的运算，数据的存储与传送，以及对内对外输入与输出的控制。我们知道台式机或笔记本电脑上有个主板，上面有各种逻辑部件，CPU、内存条、显卡、硬盘等等，把这些CPU、内存、硬盘组成一块芯片，就差不多等于单片机了，单片机=内核（等价于CPU）+内存+各种内置外部接口部件（如串口，SPI等）， 顾名思义，单片机就是单一芯片构成的计算机硬件系统。至于内核架构就是指内核具体是如何构造的，实现同样功能的内核其架构不一样，性能就不一样，酷睿i5只不过是英特尔公司自己命的CPU（处理器）的名字而已，其建基于Intel Nehalem微架构。再比如stm32单片机，它的内核是什么呢，ARM内核，内核的架构是什么呢，Cortex A7、M3等等，stm32单片机只不过是某个公司把ARM的内核拿过来，自己加上内存，FLASH，各种接口部件（如串口等）组成一块芯片，给这块芯片命的一个名字而已，单片机再加上其他外围电路，模块组成的板子，就叫开发板。针对这类小型的实现某些特别情况下的特别功能的开发，我们称之为嵌入式开发，运行在这上面的操作系统为嵌入式操作系统。不管什么样的操作系统，你只要了解了其中一个，那其他的操作系统都不在话下了，因为只要是操作系统就有操作系统的“道”在里面，懂了一个，其他的运用“道”即可窥其全貌。</p>
+<p>&emsp;&emsp;【下面正式进入主题】</p>
+<p>&emsp;&emsp; </p>
 <p>后续补充。。。。。。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://birkhoff868.github.io/2016/04/22/如何看待操作系统/" data-id="cinbrr1qf00047kldbzysi1en" class="article-share-link">Share</a>
+      <a data-url="http://birkhoff868.github.io/2016/04/22/如何看待操作系统/" data-id="cinchzgi300048kldhx3fm0o0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/操作系统/">操作系统</a></li></ul>
